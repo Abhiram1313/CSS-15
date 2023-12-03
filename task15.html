@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-image: url(banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 630px;
+  margin-top: 50px;
+}
+
+.box {
+  width: 400px;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  padding-top: 10px;
+  
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type=text], input[type=password], input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 70px;
+  box-sizing: border-box;
+  border-color: white;
+  border: none;
+  background-color: rgba(246, 242, 240, 0.881);
+}
+
+button[type=submit] {
+  background-color: rgba(0, 0, 0, 0.696);
+  color: white;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border: none;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <h1>Sign Up</h1>
+        <hr style="color: rgb(253, 254, 255);">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter email" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter email" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password.." required>
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Repeat password.." required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>d
